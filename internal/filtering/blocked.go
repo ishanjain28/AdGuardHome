@@ -32,6 +32,7 @@ var serviceRulesArray = []svc{
 		"||facebookcorewwwi.onion^",
 		"||fbcdn.com^",
 		"||fb.watch^",
+		"@@||instagram.*.fbcdn.net^",
 	}},
 	{"twitter", []string{"||twitter.com^", "||twttr.com^", "||t.co^", "||twimg.com^"}},
 	{"youtube", []string{
@@ -45,7 +46,7 @@ var serviceRulesArray = []svc{
 	}},
 	{"twitch", []string{"||twitch.tv^", "||ttvnw.net^", "||jtvnw.net^", "||twitchcdn.net^"}},
 	{"netflix", []string{"||nflxext.com^", "||netflix.com^", "||nflximg.net^", "||nflxvideo.net^", "||nflxso.net^"}},
-	{"instagram", []string{"||instagram.com^", "||cdninstagram.com^"}},
+	{"instagram", []string{"||instagram.com^", "||cdninstagram.com^", "||instagram.*.fbcdn.net^"}},
 	{"snapchat", []string{
 		"||snapchat.com^",
 		"||sc-cdn.net^",
