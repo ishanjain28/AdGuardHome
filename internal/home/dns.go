@@ -218,7 +218,8 @@ func generateServerConfig() (newConf dnsforward.ServerConfig, err error) {
 		}
 
 		if tlsConf.PortDNSOverTLS != 0 {
-			newConf.TLSListenAddrs = ipsToTCPAddrs(hosts, tlsConf.PortDNSOverTLS)
+			// newConf.TLSListenAddrs = ipsToTCPAddrs(hosts, tlsConf.PortDNSOverTLS)
+			newConf.TCPListenAddrs = ipsToTCPAddrs(hosts, tlsConf.PortDNSOverTLS)
 		}
 
 		if tlsConf.PortDNSOverQUIC != 0 {
